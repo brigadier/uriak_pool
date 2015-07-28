@@ -14,3 +14,4 @@
 
 -module(riak_pool_auto).
 -compile({parse_transform, riak_pool_parse_trans}).
+-include_lib("riakc/include/riakc.hrl").
