@@ -6,7 +6,8 @@
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  poolboy
                  ]},
   {mod, {riak_pool_app, []}},
   {env, []}
