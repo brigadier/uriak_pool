@@ -14,6 +14,7 @@
 
 -module(riak_pool).
 -compile({parse_transform, riak_pool_parse_trans}).
+-include_lib("riakc/include/riakc.hrl").
 
 -export([
          with_worker/1, with_worker/2, with_worker/3,
