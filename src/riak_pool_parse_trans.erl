@@ -95,6 +95,9 @@ maybe_remote_type({remote_type, _, [Mod, TName, TypeParams]},
                   InternalTypes)->
     {remote_type, 0,
      [Mod, TName, maybe_remote_type(TypeParams, InternalTypes)]};
+maybe_remote_type({user_type, Id, Type, TypeParams}, InternalTypes)->
+    maybe_remote_type({type, Id, Type, TypeParams},  InternalTypes);
+    
 maybe_remote_type({type, _, Type, TypeParams},
                   InternalTypes)->
     case lists:member(Type, InternalTypes) of
