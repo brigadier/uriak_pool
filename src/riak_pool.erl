@@ -17,7 +17,8 @@
 
 -export([
          with_worker/1, with_worker/2, with_worker/3,
-         get_worker/0, get_worker/1, free_worker/1
+         get_worker/0, get_worker/1, free_worker/1,
+         call_worker/3
         ]).
 
 %% @TODO try test this optimization.
